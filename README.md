@@ -11,7 +11,7 @@ In this repository, you will find:
 
 ## How to Use
 
-**1. Clone the Repository:**
+1. Clone the Repository:
    Clone this repository to your local machine using the following command:
 
    ```bash
