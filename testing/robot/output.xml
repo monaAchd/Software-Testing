@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20221014 01:56:02.476" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\Dell\.vscode\extensions\robocorp.robotframework-lsp-0.34.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Set Variable" library="BuiltIn">
+<var>${path}</var>
+<arg>C:/Users/Dell/Desktop/MatPlotLib/studysession/robot/webpages.txt</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20221014 01:56:06.945" level="INFO">${path} = C:/Users/Dell/Desktop/MatPlotLib/studysession/robot/webpages.txt</msg>
+<status status="PASS" starttime="20221014 01:56:06.945" endtime="20221014 01:56:06.945"/>
+</kw>
+<kw name="Get File">
+<var>${output}</var>
+<arg>${path}</arg>
+<msg timestamp="20221014 01:56:06.946" level="FAIL">No keyword with name 'Get File' found. Did you mean:
+    BuiltIn.Get Time</msg>
+<status status="FAIL" starttime="20221014 01:56:06.946" endtime="20221014 01:56:06.946"/>
+</kw>
+<kw name="Split String">
+<var>${addresses}</var>
+<arg>${output}</arg>
+<status status="NOT RUN" starttime="20221014 01:56:06.948" endtime="20221014 01:56:06.948"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${addresses}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20221014 01:56:06.948" endtime="20221014 01:56:06.948"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${Length}</var>
+<arg>${addresses}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="NOT RUN" starttime="20221014 01:56:06.948" endtime="20221014 01:56:06.948"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${length}</arg>
+<arg>3</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="NOT RUN" starttime="20221014 01:56:06.948" endtime="20221014 01:56:06.948"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${index}</var>
+<value>${length}</value>
+<iter>
+<var name="${index}"/>
+<kw name="Run and return rc and output">
+<var>${output}</var>
+<arg>ping ${addresses}[${index}]</arg>
+<status status="NOT RUN" starttime="20221014 01:56:06.949" endtime="20221014 01:56:06.949"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${output}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221014 01:56:06.949" endtime="20221014 01:56:06.950"/>
+</kw>
+<status status="NOT RUN" starttime="20221014 01:56:06.948" endtime="20221014 01:56:06.950"/>
+</iter>
+<status status="NOT RUN" starttime="20221014 01:56:06.948" endtime="20221014 01:56:06.950"/>
+</for>
+<status status="PASS" starttime="20221014 01:56:02.499" endtime="20221014 01:56:15.775"/>
+</kw>
+<status status="PASS" starttime="20221014 01:56:02.498" endtime="20221014 01:56:15.775"/>
+</test>
+<status status="PASS" starttime="20221014 01:56:02.477" endtime="20221014 01:56:15.776"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
